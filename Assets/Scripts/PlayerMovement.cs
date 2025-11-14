@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
-    public float speed = 0;
+    public Transform PlayerDirection;
+    Vector3 MoveDirection;
 
     void Start()
     {
@@ -17,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
 
 
-        Vector3 moveVector = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rb.AddForce(moveVector * speed);
+        MoveDirection = PlayerDirection.forward * moveVertical + PlayerDirection.right * moveHorizontal;
+        rb.AddForce(MoveDirection.normalized * 10f, ForceMode.Force);
     }
 }
