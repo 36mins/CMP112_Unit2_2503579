@@ -10,7 +10,7 @@ public class PlayerCamera : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;  //Locks the curser in the center of the screen
+        Cursor.lockState = CursorLockMode.Locked;  //Locks the cursewdr in the center of the screen
         Cursor.visible = false;  //Hides the curser
     }
 
