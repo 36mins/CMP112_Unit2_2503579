@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float MovementSpeed;
     public Transform Direction;
     public float GroundDrag;
+    public float AirDrag;
 
     float horizontalInput;
     float verticalInput;
@@ -44,8 +45,6 @@ public class PlayerMovement : MonoBehaviour
     {
         MyMovement();
 
-        
-
     }
 
     void FixedUpdate()
@@ -73,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Rigidbody.linearDamping = 2; //Less drag while in the air
+            Rigidbody.linearDamping = AirDrag; //Less drag while in the air
         }
 
         IsSprinting = Input.GetKey(Sprinting); //Checks if the player is sprinting

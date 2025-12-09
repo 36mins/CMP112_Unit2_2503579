@@ -5,6 +5,6 @@ public class EnterTV : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

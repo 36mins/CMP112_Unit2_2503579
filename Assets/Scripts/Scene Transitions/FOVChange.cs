@@ -4,8 +4,8 @@ using System.Collections;
 public class FOVChange : MonoBehaviour
 {
     public Camera Camera;
-    public float FOVChnage = 90f;
-    public float transitionSpeed = 5f;
+    public float FOVChnage = 180f;
+    public float transitionSpeed = 20f;
 
     private float originalFOV;
 
