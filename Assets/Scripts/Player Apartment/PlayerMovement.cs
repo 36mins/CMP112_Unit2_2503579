@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
     private void Jumping()
     {
         Rigidbody.linearVelocity = new Vector3(Rigidbody.linearVelocity.x, 0f, Rigidbody.linearVelocity.z); //Resets vertical velocity 
-        Rigidbody.AddForce(transform.up * JumpPower, ForceMode.Impulse); //Impulse force to jump
+        Rigidbody.AddForce(Vector3.up * JumpPower, ForceMode.Impulse); //Impulse force to jump
     }
     private void canJump()
     {
