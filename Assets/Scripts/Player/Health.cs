@@ -1,7 +1,8 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
-using TMPro;
 
 public class Health : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class Health : MonoBehaviour
 
         if (CurrentHealth <= 0)
         {
-            //Go to death screen
+            SceneManager.LoadScene(4);
         }
         UpdateHealthUI();
     }

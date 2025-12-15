@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 3e759aef68e7af2469fdacc74a7ac2c9
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 5cb062431b944274fb61c80a1e47eb88
+  - enabled: 1
+    path: Assets/Scenes/HallWay.unity
+    guid: 1e67a6421505b0d47a9ac931be6d613c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
