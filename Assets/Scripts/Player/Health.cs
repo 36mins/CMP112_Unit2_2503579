@@ -1,49 +1,59 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
-    public int MaxHealth;
-    public int CurrentHealth;
+    [Header("Health")]
+    public float MaxHealth;
+    public float CurrentHealth;
+
+    [Header("Regen")]
+    public float HealthRegenPerSecond = 5f;
     bool Apartment;
     public float PlayerHeight;
     public LayerMask ApartmentFloor;
 
-    [SerializeField] HealthSlider healthSlider;
+    [Header("UI")]
+    public TextMeshProUGUI HealthText;
+   
 
-    private void Awake()
+    void Start()
     {
-        healthSlider = GetComponentInChildren<HealthSlider>();
+        CurrentHealth = MaxHealth;
+        UpdateHealthUI();
     }
 
-    private void Start()
-    {
-        healthSlider.UpdateHealth(CurrentHealth, MaxHealth);
-    }
     private void Update()
     {
         Healing();
+        UpdateHealthUI();
     }
 
     public void Damage(int damage)
     {
         CurrentHealth -= damage;
-        healthSlider.UpdateHealth(CurrentHealth, MaxHealth);
-        if(CurrentHealth <= 0)
+        CurrentHealth = Mathf.Clamp(CurrentHealth, 0, MaxHealth);
+
+        if (CurrentHealth <= 0)
         {
             //Go to death screen
         }
+        UpdateHealthUI();
     }
     public void Healing()
     {
         Apartment = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.90f + 0.2f, ApartmentFloor);
-        if (Apartment)
+        if (Apartment && CurrentHealth < MaxHealth)
         {
-            CurrentHealth += 1;
+            CurrentHealth += HealthRegenPerSecond * Time.deltaTime;
             CurrentHealth = Mathf.Clamp(CurrentHealth, 0, MaxHealth);
         }
-        healthSlider.UpdateHealth(CurrentHealth, MaxHealth);
+        
     }
-   
+    void UpdateHealthUI()
+    {
+        HealthText.text = Mathf.CeilToInt(CurrentHealth).ToString();
+    }
 }
