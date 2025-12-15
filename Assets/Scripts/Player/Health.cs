@@ -6,18 +6,27 @@ using TMPro;
 public class Health : MonoBehaviour
 {
     [Header("Health")]
-    public float MaxHealth;
-    public float CurrentHealth;
+    public int MaxHealth;
+    public int CurrentHealth;
 
     [Header("Regen")]
-    public float HealthRegenPerSecond = 5f;
+    public float HealthRegen = 5f;
     bool Apartment;
     public float PlayerHeight;
     public LayerMask ApartmentFloor;
 
     [Header("UI")]
     public TextMeshProUGUI HealthText;
-   
+    void Awake()
+    {
+        if (FindObjectsOfType<Health>().Length > 1)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
@@ -47,7 +56,7 @@ public class Health : MonoBehaviour
         Apartment = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.90f + 0.2f, ApartmentFloor);
         if (Apartment && CurrentHealth < MaxHealth)
         {
-            CurrentHealth += HealthRegenPerSecond * Time.deltaTime;
+            CurrentHealth += Mathf.RoundToInt(HealthRegen * Time.deltaTime);
             CurrentHealth = Mathf.Clamp(CurrentHealth, 0, MaxHealth);
         }
         

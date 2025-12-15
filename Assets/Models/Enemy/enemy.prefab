@@ -901,6 +901,8 @@ GameObject:
   - component: {fileID: 4125537560897423465}
   - component: {fileID: 3611163185000241291}
   - component: {fileID: 7659329788879007053}
+  - component: {fileID: 3678550963573377452}
+  - component: {fileID: -6003779532139770717}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -916,8 +918,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3605987064067314387}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13, y: 0.2, z: 17.89808}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 297, y: 0.2, z: 17.89808}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -954,9 +956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5f277cbd46e764f9992d925aff75d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  player: {fileID: 0}
-  playerpos: {fileID: 0}
-  enemy: {fileID: 7659329788879007053}
 --- !u!195 &7659329788879007053
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -979,6 +978,41 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &3678550963573377452
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3605987064067314387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.986908, y: 13.28855, z: 4.609708}
+  m_Center: {x: -0.23918152, y: 6.144275, z: -0.58694315}
+--- !u!114 &-6003779532139770717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3605987064067314387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 009e982810d91094eba744ad6ebe83ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
+  damage: 10
+  damageCooldown: 3
 --- !u!1 &3838756268243017190
 GameObject:
   m_ObjectHideFlags: 0

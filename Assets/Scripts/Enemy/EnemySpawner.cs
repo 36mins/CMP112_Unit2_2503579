@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
     public float maxZ = 10f;
 
     [Header("Spawn Timing")]
-    public float spawnRate = 2f;
+    public float spawnRate = 0.5f;
 
     void Start()
     {
@@ -20,10 +20,8 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Vector3 randomPosition = new Vector3(
-            Random.Range(minX, maxX),
-            0f,
-            Random.Range(minZ, maxZ)
+        Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 0f, Random.Range(minZ, maxZ)
+
         );
 
         Instantiate(enemyPrefab, randomPosition, Quaternion.identity);

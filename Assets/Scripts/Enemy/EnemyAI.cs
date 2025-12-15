@@ -3,21 +3,17 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    public GameObject player;
-    public Transform playerpos;
-    public NavMeshAgent enemy;
-    void Start()
+    private Transform player;
+    private NavMeshAgent enemy;
+
+    void Awake()
     {
         enemy = GetComponent<NavMeshAgent>();
-        enemy.destination = GameObject.Find("player").transform.position;
-        playerpos.position = GameObject.Find("player").transform.position;
+        player = GameObject.FindWithTag("Player").transform;
     }
+
     void Update()
     {
-        if (enemy.destination != playerpos.position)
-        {
-            enemy.SetDestination(playerpos.position);
-        }
-
+        enemy.SetDestination(player.position);
     }
 }
