@@ -63,6 +63,7 @@ public class Health : MonoBehaviour
     }
     void UpdateHealthUI()
     {
-        HealthText.text = Mathf.CeilToInt(CurrentHealth).ToString();
+        HealthText.text = System.Convert.ToString("Health: " + CurrentHealth);
+        
     }
 }
