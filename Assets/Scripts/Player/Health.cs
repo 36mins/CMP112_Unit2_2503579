@@ -60,12 +60,12 @@ public class Health : MonoBehaviour
         Debug.Log("healing");
         if (Apartment && CurrentHealth < MaxHealth) //If they are then
         {
-            Regen += HealthRegen * Time.deltaTime;
+            Regen += HealthRegen * Time.deltaTime;  //How much HP regend per second
             if (Regen >= 1f)
             {
-                int healAmount = Mathf.FloorToInt(Regen);
-                CurrentHealth += healAmount;
-                Regen -= healAmount;
+                int healAmount = Mathf.FloorToInt(Regen);   //Heals in whole numbers
+                CurrentHealth += healAmount;    //adds the healed amount to the players current health
+                Regen -= healAmount;    //Makes the Regen more precise
             }
 
             CurrentHealth = Mathf.Clamp(CurrentHealth, 0, MaxHealth);
