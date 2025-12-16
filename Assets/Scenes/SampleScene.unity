@@ -2629,7 +2629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   MaxHealth: 100
-  CurrentHealth: 1
+  CurrentHealth: 100
   HealthRegen: 5
   PlayerHeight: 2
   ApartmentFloor:

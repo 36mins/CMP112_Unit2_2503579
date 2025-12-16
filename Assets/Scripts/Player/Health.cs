@@ -15,6 +15,8 @@ public class Health : MonoBehaviour
     bool Apartment;
     public float PlayerHeight;
     public LayerMask ApartmentFloor;
+    float Regen;
+
 
     [Header("UI")]
     public TextMeshProUGUI HealthText;
@@ -55,9 +57,17 @@ public class Health : MonoBehaviour
     public void Healing()
     {
         Apartment = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.90f + 0.2f, ApartmentFloor); //Checks if the player is in the aprtment
+        Debug.Log("healing");
         if (Apartment && CurrentHealth < MaxHealth) //If they are then
         {
-            CurrentHealth += Mathf.RoundToInt(HealthRegen * Time.deltaTime); //Regens health over time
+            Regen += HealthRegen * Time.deltaTime;
+            if (Regen >= 1f)
+            {
+                int healAmount = Mathf.FloorToInt(Regen);
+                CurrentHealth += healAmount;
+                Regen -= healAmount;
+            }
+
             CurrentHealth = Mathf.Clamp(CurrentHealth, 0, MaxHealth);
         }
         

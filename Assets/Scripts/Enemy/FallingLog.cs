@@ -5,7 +5,7 @@ public class FallingLog : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Health playerHealth = collision.gameObject.GetComponent<Health>();
+            Health playerHealth = collision.gameObject.GetComponent<Health>(); //Finds the players health script
 
             if (playerHealth != null)
             {
