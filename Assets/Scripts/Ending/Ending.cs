@@ -12,14 +12,14 @@ public class Ending : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Cursor.visible = true;
+        Cursor.visible = true;                              //allows the player to click the button on the canvas
         Cursor.lockState = CursorLockMode.None;
         ending.enabled = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        ending.enabled = false;
+        ending.enabled = false;             //gets rid of the mouse
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

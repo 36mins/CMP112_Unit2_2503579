@@ -14,9 +14,9 @@ public class FallingLog : MonoBehaviour
     {
 
 
-        if (collision.gameObject.CompareTag("Log"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerHealth.Damage(25);
+            PlayerHealth.Damage(40);  //if the player is hit they take damage 
         }
     }
 }

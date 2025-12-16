@@ -12,14 +12,14 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        currentTime = StartTime;
+        currentTime = StartTime; 
     }
     void Update()
     {
-        currentTime = currentTime - Time.deltaTime;
+        currentTime = currentTime - Time.deltaTime; //current time counts down
         currentTimeInt = System.Convert.ToInt32(currentTime);
 
-        if (currentTimeInt == 0)
+        if (currentTimeInt == 0)  //If the time hits 0 then load the scene
         {
             SceneManager.LoadScene(2);
         }

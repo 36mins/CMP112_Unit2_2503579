@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public int damage = 10;
-    public float damageCooldown = 5f;
+    public int damage = 10;                 //damage the player takes
+    public float damageCooldown = 5f;       //time since last hit(so the player cant get hit back to back)
 
     float lastDamageTime;
 
@@ -11,20 +11,20 @@ public class EnemyDamage : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Player")) 
         {
-            return;
+            return;     //if they are not taged player do nothing
         }
 
         if (Time.time < lastDamageTime + damageCooldown) 
         {
-            return;
+            return;         //if hit and still has a cooldown does nothing
         }
 
-        Health health = collision.gameObject.GetComponent<Health>();
+        Health health = collision.gameObject.GetComponent<Health>(); //Finds the players health script
 
         if (health != null)
         {
-            health.Damage(damage);
-            lastDamageTime = Time.time;
+            health.Damage(damage);  //calls damage from the health script and reduces the health by the damage amount
+            lastDamageTime = Time.time; //Saves the Time for the damageCooldown
         }
     }
 }

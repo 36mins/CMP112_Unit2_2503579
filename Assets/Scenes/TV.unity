@@ -672,10 +672,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 0}
-  heightAboveTrigger: 5
-  fallForce: 15
-  lifetime: 4
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
+  fallForce: 1000
+  Lifetime: 4
 --- !u!1 &152977681
 GameObject:
   m_ObjectHideFlags: 0
@@ -6197,10 +6197,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &273783034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6835,10 +6835,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &371728843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8301,10 +8301,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &657367596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9082,10 +9082,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &772803395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9726,10 +9726,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &887601673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9796,10 +9796,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &910967608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10572,10 +10572,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &1077876728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10820,10 +10820,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &1157209490
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21337,10 +21337,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &1318537067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27640,10 +27640,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &1625688263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27710,10 +27710,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &1645966385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33293,10 +33293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &1761342900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34144,10 +34144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a2de15a6ddcd94f88420123cfdcc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
-  prefabToSpawn: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  heightAboveTrigger: 25
+  Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+  Height: 5
   fallForce: 1000
-  lifetime: 5
+  Lifetime: 4
 --- !u!65 &2011051073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34747,6 +34747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Log
       objectReference: {fileID: 0}
+    - target: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+      propertyPath: m_TagString
+      value: Log
+      objectReference: {fileID: 0}
     - target: {fileID: 8963413173019030382, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
       propertyPath: m_LocalPosition.x
       value: 371.67694
@@ -34800,6 +34804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 22525173}
     m_Modifications:
+    - target: {fileID: -6003779532139770717, guid: c99cab8576a801e48a8aefba39ba671f, type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 128951157382887757, guid: c99cab8576a801e48a8aefba39ba671f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -34908,6 +34916,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 71b2c0d04f552694db12f2f3d835abf4, type: 2}
+    - target: {fileID: 7659329788879007053, guid: c99cab8576a801e48a8aefba39ba671f, type: 3}
+      propertyPath: m_Speed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7894967224602095928, guid: c99cab8576a801e48a8aefba39ba671f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
