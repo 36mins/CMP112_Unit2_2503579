@@ -673,9 +673,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!1 &152977681
 GameObject:
   m_ObjectHideFlags: 0
@@ -6198,9 +6198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &273783034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6836,9 +6836,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &371728843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8302,9 +8302,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &657367596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9083,9 +9083,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &772803395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9727,9 +9727,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &887601673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9797,9 +9797,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &910967608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10573,9 +10573,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &1077876728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10821,9 +10821,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &1157209490
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21338,9 +21338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &1318537067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27641,9 +27641,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &1625688263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27711,9 +27711,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
-  fallForce: 1000
-  Lifetime: 4
+  Height: 50
+  fallForce: 9999
+  Lifetime: 1
 --- !u!65 &1645966385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33294,9 +33294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &1761342900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34145,9 +34145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogSpawner
   Log: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
-  Height: 5
+  Height: 20
   fallForce: 1000
-  Lifetime: 4
+  Lifetime: 5
 --- !u!65 &2011051073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34743,6 +34743,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1217412573}
     m_Modifications:
+    - target: {fileID: -9199530609938774591, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+      propertyPath: m_Mass
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -9199530609938774591, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8588259378433059284, guid: b24db2fb3a483e54eb4a627836cd1556, type: 3}
       propertyPath: m_Name
       value: Log

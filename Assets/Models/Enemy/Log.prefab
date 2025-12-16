@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7637a35dce5a806499912340422abeed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7026152569612925496}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7637a35dce5a806499912340422abeed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5599110279853104037}
   m_SourcePrefab: {fileID: 100100000, guid: 7637a35dce5a806499912340422abeed, type: 3}
 --- !u!1 &8588259378433059284 stripped
 GameObject:
@@ -132,3 +135,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019999998, y: 0.020000001, z: 0.09267327}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5599110279853104037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588259378433059284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0ec9b4ed4d626498e4a49fa5093d05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FallingLog
+  PlayerHealth: {fileID: 0}
